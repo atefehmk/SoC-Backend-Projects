@@ -26,3 +26,11 @@ To get the account with the highest balance, use:
 ```bash
 python queries.py max_balance_account
 ```
+## Outputs
+The outputs of the queries are logged in separate files. After running a query, you can check the corresponding log file to view the results. The log files are named [query_name].log.
+## Example
+To get the account with the highest balance, use:
+```bash
+python queries.py max_balance_account
+```
+ The output will be stored in max_balance_account.log.
