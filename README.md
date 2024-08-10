@@ -10,7 +10,7 @@ To execute a query, run the following command:
 python queries.py [query_name]
 ```
 
-Available Queries
+### Available Queries
 1. list_accounts: List the name of each account owner and the balance of each account.
 2. max_balance_account: Retrieve the account with the highest balance.
 3. min_balance_accounts: Retrieve the top 5 accounts with the lowest balance.
@@ -20,7 +20,7 @@ Available Queries
 7. sum_person_balances: Calculate and list the total balance for each person in the bank.
 
 
-###Example
+### Example
 To get the account with the highest balance, use:
 
 ```bash
