@@ -96,8 +96,8 @@ def sum_person_balances():
     for person in person_balances:
         logger.info(f"Name: {person.first_name} {person.last_name}, Total Balance: {person.total_balance}")
 
-def create_random_accounts_and_query():
-    logging.basicConfig(filename='logs/random_accounts_query.log', filemode="w", level=logging.INFO, format='%(asctime)s - %(message)s')
+def index_benchmark():
+    logging.basicConfig(filename='logs/index_benchmark.log', filemode="w", level=logging.INFO, format='%(asctime)s - %(message)s')
     logger = logging.getLogger(__name__)
     
     start_time = time.time()
@@ -133,8 +133,8 @@ if __name__ == "__main__":
             accounts_nid_gt_balance()
         elif sys.argv[1] == "sum_person_balances":
             sum_person_balances()
-        elif sys.argv[1] == "random_accounts_query":
-            create_random_accounts_and_query()
+        elif sys.argv[1] == "index_benchmark":
+            index_benchmark()
         else:
             print("Invalid query")
     else:
