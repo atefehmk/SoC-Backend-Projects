@@ -73,10 +73,10 @@ def accounts_id_gt_balance():
     logging.basicConfig(filename='logs/accounts_id_gt_balance.log', filemode="w", level=logging.INFO, format='%(asctime)s - %(message)s')
     logger = logging.getLogger(__name__)
 
-    accounts = Account.objects.filter(account_id__gt=models.F('balance'))
+    accounts = Account.objects.filter(id__gt=models.F('balance'))
 
     for account in accounts:
-        logger.info(f"Account ID: {account.account_id}, Balance: {account.balance}")
+        logger.info(f"Account ID: {account.id}, Balance: {account.balance}")
 
 def accounts_nid_gt_balance():
     logging.basicConfig(filename='logs/accounts_nid_gt_balance.log', filemode="w", level=logging.INFO, format='%(asctime)s - %(message)s')
