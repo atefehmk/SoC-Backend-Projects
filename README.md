@@ -1,6 +1,6 @@
 # SoC-Backend-Projects
 
-This repository contains backend projects for the SoC course. The `queries.py` file includes various queries related to account and person management. You can run specific queries using the command-line interface.
+This repository contains backend projects for the SoC course. Initially, accounts and persons are created using the scripts.py file. The queries.py file includes various queries related to the bank. You can run specific queries using the command-line interface.
 
 ## Running Queries
 
